@@ -71,31 +71,31 @@ public class ControlFlowExercises {
 //
 //        }
         Scanner enterNum = new Scanner(System.in);
-        System.out.println("What number would you like to go up to? ");
-        int yourNum = enterNum.nextInt();
-        System.out.println("Here is your table!\n");
-        System.out.println(
-                "number | squared | cubed\n" +
-                        "------ | ------- | -----\n");
-        for (int i = 1; i <= yourNum; i++) {
-            int squared = i * i;
-            int cubed = i * i * i;
-
-            System.out.println(i + "      | " + (squared) + "       | " + (cubed));
-        }
+//        System.out.println("What number would you like to go up to? ");
+//        int yourNum = enterNum.nextInt();
+//        System.out.println("Here is your table!\n");
+//        System.out.println(
+//                "number | squared | cubed\n" +
+//                        "------ | ------- | -----\n");
+//        for (int i = 1; i <= yourNum; i++) {
+//            int squared = i * i;
+//            int cubed = i * i * i;
 //
-//        Scanner userInput = new Scanner(System.in);
-//        boolean noSelection = false;
-//        do {
-//            System.out.println("Please enter your number grade (1-100): ");
-//        int numGrade = enterNum.nextInt();
-//        letterGrade(numGrade);
-//            System.out.println("Do you want to continue? Y/N");
-//            char userChoice = userInput.next().charAt(0);
-//            if (userChoice == 'Y') {
-//                noSelection = true;
-//            }
-//        }  while (noSelection);
+//            System.out.println(i + "      | " + (squared) + "       | " + (cubed));
+//        }
+//
+        Scanner userInput = new Scanner(System.in);
+        boolean noSelection = false;
+        do {
+            System.out.println("Please enter your number grade (1-100): ");
+        int numGrade = enterNum.nextInt();
+        letterGrade(numGrade);
+            System.out.println("Do you want to continue? Y/N");
+            char userChoice = userInput.next().charAt(0);
+            if (userChoice == 'Y') {
+                noSelection = true;
+            }
+        }  while (noSelection);
 //
     }
 }
