@@ -20,6 +20,5 @@ public class MethodsExercises {
         multiplication(10, 8);
         division(10, 5);
         modulus(100, 8);
-
     }
 }
