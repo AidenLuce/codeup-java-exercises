@@ -8,8 +8,13 @@ public class Input {
     public  Input(){
        this.scanner = new Scanner(System.in);
     }
-    String getString(){
+    public String getString(){
        return this.scanner.nextLine();
+    }
+
+    public String getString(String input){
+        System.out.println(input);
+        return this.scanner.nextLine();
     }
     public boolean yesNo(){
         System.out.println("Yes or No: ");
@@ -40,8 +45,4 @@ public class Input {
     public double getDouble(){
         return Double.parseDouble(getString());
     }
-
-
-
-
 }
