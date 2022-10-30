@@ -30,8 +30,13 @@ public class Input {
         return userInput;
     }
     public int getInt(){
-        return Integer.parseInt(getString());
-
+        String input = getString();
+        try{
+            return Integer.parseInt(input);
+        } catch (NumberFormatException e){
+            System.out.println("ERROR please enter an integer.");
+            return getInt();
+        }
     }
     public double getDouble(double min, double max){
         System.out.println("type a number between min and max: ");
@@ -43,6 +48,12 @@ public class Input {
         return userInput;
     }
     public double getDouble(){
-        return Double.parseDouble(getString());
+        String input = getString();
+        try{
+            return Double.parseDouble(input);
+        } catch (NumberFormatException e){
+            System.out.println("ERROR please enter a Double.");
+            return getDouble();
+        }
     }
 }
