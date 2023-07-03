@@ -22,18 +22,18 @@ public class Person {
     public Person(String nameStr2){
         this.name = nameStr2;
     }
-//    public static void main(String[] args) {
-//
-//       Person me = new Person();
-//       me.setName("Aiden Luce");
-//        System.out.println(me.getName());
-//        sayHello(me.getName());
-//
-//        Person myObj = new Person();
-//        Person nextObj = new Person();
-//        myObj.setName("two");
-//        nextObj.setName("John");
-//        System.out.println(myObj.getName());
-//        System.out.println(nextObj.getName());
-//    }
+    public static void main(String[] args) {
+
+       Person me = new Person();
+       me.setName("Aiden Luce");
+        System.out.println(me.getName());
+        
+
+        Person myObj = new Person();
+        Person nextObj = new Person();
+        myObj.setName("two");
+        nextObj.setName("John");
+        System.out.println(myObj.getName());
+        System.out.println(nextObj.getName());
+    }
 }
